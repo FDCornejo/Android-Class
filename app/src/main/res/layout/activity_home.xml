@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
-    <TextView
-        android:id="@+id/textResult"
+    android:orientation="vertical"
+    tools:context=".Activities.Home">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:background="@color/colorPrimary"
-        android:textColor="#FFF"
-        android:textSize="30dp"
-        app:layout_constraintLeft_toLeftOf="parent"></TextView>
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btnFr1"
+            android:layout_height="wrap_content"
+            android:text="Buton 1" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btnFr2"
+            android:layout_height="wrap_content"
+            android:text="Buton 2" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container_frame"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+</LinearLayout>
